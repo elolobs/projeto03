@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  width: 80vw;
+  margin: auto;
+}
+
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+img{
+    height: auto;
+    width: 200px;
+}
+
+.others{
+    font-size: 30px;
+    
+}
