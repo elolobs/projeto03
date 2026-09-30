@@ -1,0 +1,56 @@
+.card {
+  display: grid;
+  grid-template-rows: 220px auto auto;
+  gap: 14px;
+  min-width: 0;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9ded5;
+}
+
+.imageLink {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #f0f2ed;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 220ms ease;
+}
+
+.imageLink:hover .image {
+  transform: scale(1.045);
+}
+
+.title {
+  align-self: start;
+  color: #19261f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #176b4a;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.link span {
+  font-size: 18px;
+  transition: transform 180ms ease;
+}
+
+.link:hover span {
+  transform: translate(3px, -3px);
+}
+
