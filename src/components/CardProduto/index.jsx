@@ -1,15 +1,13 @@
 import Link from "next/link";
-import styles from "./cardProduto.module.css";
+import "./cardProduto.css";
 
 export default function CardProduto({ produto }) {
   return (
-    <article className={styles.card}>
-      <Link className={styles.imageLink} href={`/produtos/${produto.id}`} aria-label={`Saiba mais sobre ${produto.title}`}>
-        <img className={styles.image} src={produto.thumbnail} alt={produto.title} />
-      </Link>
-      <h2 className={styles.title}>{produto.title}</h2>
-      <Link className={styles.link} href={`/produtos/${produto.id}`}>
-        Saiba mais <span aria-hidden="true">↗</span>
+    <article className="card">
+      <Link href={`/produtos/${produto.id}`}>
+        <img className="image" src={produto.thumbnail} alt={produto.title} />
+        <h2>{produto.title}</h2>
+        <p>${produto.price}</p>
       </Link>
     </article>
   );

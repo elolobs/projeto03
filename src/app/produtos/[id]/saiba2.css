@@ -1,0 +1,9 @@
+.page {
+  padding: 20px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+}
