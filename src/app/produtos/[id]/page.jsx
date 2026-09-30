@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import styles from "./saiba2.css";
+import  "./saiba2.css";
 
 export default function Produto() {
   const params = useParams();
@@ -16,11 +16,11 @@ export default function Produto() {
   }, [params.id]);
 
   return (
-    <main className={styles.page}>
+    <main className="page">
       {produto && <>
         <Link href="/produtos">Voltar aos produtos</Link>
         <h1>{produto.title}</h1>
-        <img className={styles.image} src={produto.thumbnail} alt={produto.title} />
+        <img className="image" src={produto.thumbnail} alt={produto.title} />
         <p>{produto.description}</p>
         <p>Categoria: {produto.category}</p>
         <p>Preço: ${produto.price}</p>
